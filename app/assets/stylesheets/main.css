@@ -1,0 +1,91 @@
+#main-background {
+	background-image: url('/assets/Main.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	width: 100vw;
+}
+
+#title {
+	font-family: 'Anton', sans-serif;
+	font-size: 115px;
+	color: white;
+	text-align: center;
+	position: relative;
+	top: 50px;
+}
+
+#tagline {
+	font-family: 'Trocchi', serif;
+	color: white;
+	font-size: 35px;
+	text-align: center;
+	position: relative;
+	top: 20px;
+}
+
+#navbar {
+	background-color: black;
+	width: 100vw;
+	height: 15%;
+	position: relative;
+	right: 10px;
+	bottom: 21px;
+	display: inline-block;
+}
+
+#signup-links {
+	color: #9C2DE5;
+	display: inline-block;
+	position: relative;
+	top: 10px;
+	left: 5%;
+}
+
+#login-form {
+	display: inline-block;
+	position: relative;
+	left: 23.5%;
+	top: 12px;
+}
+
+a {
+	display: inline-block;
+	text-decoration-line: none;
+}
+
+#signup {
+	display: inline-block;
+	color: white;
+	margin-right: 5px
+}
+
+#individual {
+	margin-right: 2px;
+	color: #9C2DE5;
+}
+
+#business {
+	color: #9C2DE5;
+
+}
+
+#email {
+
+}
+
+#password {
+	
+}
+
+#login {
+	
+} 
+
+#twitter {
+	display: inline-block;
+	float: right;
+	position: relative;
+	left: 155%;
+	bottom: 23.5px;
+}

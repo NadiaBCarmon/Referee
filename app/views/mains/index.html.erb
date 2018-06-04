@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html id="main-background">
+<head>
+	<title>Referee</title>
+
+	<%= stylesheet_link_tag "main" %>
+
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Anton|Trocchi" rel="stylesheet">
+</head>
+<body>
+
+<div id="navbar">
+
+<div id="signup-links">
+	<h4 id="signup">Sign Up As:</h1>
+		<a href="/customers/sign_up"><h4 id="individual">Individual</h4></a> |
+		<a href="/businesses/sign_up"><h4 id="business">Business</h4></a>
+</div>
+
+	<div id="login-form">
+	<form method="POST" action="mains#create">
+		<input required="" type="text"name="email" id="email" placeholder="Email"></input>
+		<input required="" type="password" name="password" id="password" placeholder="Password">
+		<button id="login">Login</button>
+	</form>
+
+	<div id="twitter">
+	<a href="/auth/twitter"><img src="/assets/Twitter.png">
+		<% if current_user %>
+          <li>Signed in as <%= current_user.name %></li>
+          <li><%= link_to 'Log Out', logout_path, method: :delete %></li>
+        <% else %>
+        <% end %>
+    </a>
+	</div>
+	
+	</div>
+</div>
+
+<h1 id="title">REFEREE</h1>
+
+<h3 id="tagline">We score business-customer interactions and distribute the results on social media</h3>
+</body>
+</html>

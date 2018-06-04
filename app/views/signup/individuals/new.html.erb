@@ -1,0 +1,30 @@
+<h1>Customer Survey</h1>
+<h3>Answer A Few Questions So We Can Get Started!</h3>
+
+ <%= form_for @addcustomer do |f| %>
+
+ 	<p>
+ 		<%= f.label :firstname %>
+ 		<%= f.text_field :firstname %>
+ 	</p>
+
+
+ 	<p>
+ 		<%= f.label :lastname %>
+ 		<%= f.text_field :firstname %>
+ 	</p>
+
+ <%= form_for @addconflict do |f| %>
+ 	
+ 	<p>
+ 		<%= f.label :customer_survey %>
+ 		<%= f.text_field :customer_survey %>
+ 	</p>
+
+
+ 	<p>
+ 		<%= f.submit %>
+ 	</p>
+
+ <% end %>
+ <% end %>

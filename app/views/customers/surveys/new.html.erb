@@ -1,0 +1,26 @@
+<h3>Please Answer A Few Questions So We Can Get Started!</h3>
+
+<%= form_for(resource, as: resource_name, url: survey_path(resource_name)) do |f| %>
+  <%= devise_error_messages! %>
+
+  <div class="field">
+    <%= f.label :firstname %><br />
+    <%= f.fname_field :firstname, autofocus: true, autocomplete: "First Name" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :lastname %><br />
+    <%= f.lname_field :lastname, autofocus: true, autocomplete: "Last Name" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password_confirmation %><br />
+    <%= f.password_field :password_confirmation, autocomplete: "off" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Sign up" %>
+  </div>
+<% end %>
+
+<%= render "customers/shared/links" %>
