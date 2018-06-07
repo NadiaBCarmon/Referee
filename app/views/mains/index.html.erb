@@ -28,11 +28,6 @@
 
 	<div id="twitter">
 	<a href="/auth/twitter"><img src="/assets/Twitter.png">
-		<% if current_user %>
-          <li>Signed in as <%= current_user.name %></li>
-          <li><%= link_to 'Log Out', logout_path, method: :delete %></li>
-        <% else %>
-        <% end %>
     </a>
 	</div>
 	

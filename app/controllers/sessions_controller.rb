@@ -1,16 +1,22 @@
 class SessionsController < ApplicationController
+  
   def create
-    @user = User.find_or_create_from_auth_hash(auth_hash)
-    session[:user_id] = @user.id
-    redirect_to root_path
+
+    user = User.from_omniauth(ENV["omniauth.auth"])
+    session[:user_id] = user_id
+    redirect_to '/survey/individuals/new', notice: "Signed in!"
+
+    # @user = User.find_or_create_from_auth_hash(auth_hash)
+    # session[:user_id] = @user.id
+    # redirect_to root_path
   end
 
   def destroy
-    if current_user
-      session.delete(:user_id)
-      flash[:success] = "Sucessfully logged out!"
-    end
-    redirect_to root_path
+    # if current_user
+    #   session.delete(:user_id)
+    #   flash[:success] = "Sucessfully logged out!"
+    # end
+    # redirect_to root_path
   end
  
   protected

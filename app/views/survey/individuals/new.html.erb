@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<h1>Customer Survey</h1>
+<h3>Answer A Few Questions So We Can Get Started!</h3>
+
+ <%= form_for(:individual, url: '/survey/individuals') do |f| %>
+
+ 	<p>
+ 		<%= f.label :Find_a_business %>
+ 		<%= f.text_field :business_search %>
+ 	</p>
+
+ 	<p>
+ 		<%= f.label :Find_a_business %>
+ 		<%= f.text_field :business_search %>
+ 	</p>
+ 	
+ 	<p>
+ 		<%= f.label :tell_us_about_this_business %>
+ 		<%= f.text_field :customer_survey %>
+ 	</p>
+
+ 	<p>
+ 		<%= f.submit %>
+ 	</p>
+
+ <% end %>
+
+ <%= javascript_include_tag "new" %>
+
+ <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+</body>
+</html>

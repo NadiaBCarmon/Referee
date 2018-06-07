@@ -17,6 +17,7 @@ gem 'uglifier', '>= 1.3.0'
 # gem 'mini_racer', platforms: :ruby
 gem 'devise'
 gem 'omniauth-twitter'
+gem 'twitter'
 
 group :development, :test do
   gem 'dotenv-rails'
